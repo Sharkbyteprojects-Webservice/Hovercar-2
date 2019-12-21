@@ -19,6 +19,11 @@
         <div class="webgl-logo"></div>
         <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
         <div class="title">Hovercar 2</div>
+        <script>
+        if('serviceWorker' in navigator){
+            navigator.serviceWorker.register('./sw.js');
+        }
+     </script>
       </div>
     </div>
   </body>
