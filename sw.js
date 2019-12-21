@@ -1,4 +1,4 @@
-importScripts("./4.2.0/wbox.js");
+importScripts("./wbox.js");
 
 self.addEventListener('message', (event) => {
   if (event.data && event.data.type === 'SKIP_WAITING') {
@@ -11,8 +11,16 @@ self.__precacheManifest = [
     "revision": "9b952195ab79ef94f0feaae8cbb8d8ac"
   },
   {
+    "url": "Build/webgl.data.unityweb",
+    "revision": "8b19dbfd4da0999ce8cb4af68fff462b"
+  },
+  {
     "url": "Build/webgl.json",
     "revision": "8059be9cbde57bb4d537161574b2c55d"
+  },
+  {
+    "url": "Build/webgl.wasm.code.unityweb",
+    "revision": "78d6e103aef736801d90d009fc6edfce"
   },
   {
     "url": "Build/webgl.wasm.framework.unityweb",
