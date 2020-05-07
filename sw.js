@@ -1,18 +1,37 @@
+/**
+ * Welcome to your Workbox-powered service worker!
+ *
+ * You'll need to register this file in your web app and you should
+ * disable HTTP caching for this file too.
+ * See https://goo.gl/nhQhGp
+ *
+ * The rest of the code is auto-generated. Please don't update this file
+ * directly; instead, make changes to your Workbox build configuration
+ * and re-run your build process.
+ * See https://goo.gl/2aRDsh
+ */
 
-importScripts("./wbox.js");
+importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
+
 self.addEventListener('message', (event) => {
   if (event.data && event.data.type === 'SKIP_WAITING') {
     self.skipWaiting();
   }
 });
+
+/**
+ * The workboxSW.precacheAndRoute() method efficiently caches and responds to
+ * requests for URLs in the manifest.
+ * See https://goo.gl/S9QRab
+ */
 self.__precacheManifest = [
   {
     "url": "Build/build.data",
-    "revision": "42029d2c0de76807f3c20e5e4efe8992"
+    "revision": "46468bdf1c91aea0451207355295558f"
   },
   {
     "url": "Build/build.framework.js",
-    "revision": "5fddfe0d16030e5ec56409be429a61c1"
+    "revision": "2b39c6adf02ca231daff5e82d04fa02d"
   },
   {
     "url": "Build/build.loader.js",
@@ -20,7 +39,7 @@ self.__precacheManifest = [
   },
   {
     "url": "Build/build.wasm",
-    "revision": "71b5fae62ed90fed4285a854625d9e06"
+    "revision": "6d84f2e5de20ab29dc004cbecc9e8492"
   },
   {
     "url": "index.html",
